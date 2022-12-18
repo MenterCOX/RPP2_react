@@ -97,6 +97,9 @@ h2{
   line-height: auto;
 }
 
+Link{
+  text-decoration: none;
+} 
 .list-of-works {
   text-align: left;
   display: grid ;
@@ -276,3 +279,6 @@ h2{
   margin: 5% 5%;
 }
 
+.mylink {
+  text-decoration: none;
+}

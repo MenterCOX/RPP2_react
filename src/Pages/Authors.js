@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button, Card, CardGroup, Container, Figure } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import{Link} from "react-router-dom"
 
 import Globus from "../assets/Globus.jpg";
 import egor from "../assets/Boroda.jpg";
@@ -19,9 +18,13 @@ class Authors extends Component {
               <Card.Img variant="top" src={Mik} alt="Mikola" />
               <Card.Body>
                 <Card.Title>Николай Метлицкий</Card.Title>
-                <Button href="/RPP2_react.github.io/authors/metliskij" variant="outline-dark">
+                <Link to="/authors/metliskij/">
+                <Button variant="outline-dark">
+                 
                   Об авторе
+                  
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
 
@@ -29,9 +32,13 @@ class Authors extends Component {
               <Card.Img variant="top" src={Nil} alt="Nil" />
               <Card.Body>
                 <Card.Title>Нил Гилевич</Card.Title>
-                <Button href="/RPP2_react.github.io/authors/hilevich" variant="outline-dark">
+                <Link to="/authors/hilevich/">
+                <Button variant="outline-dark">
+                  
                   Об авторе
+                  
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
 
@@ -39,9 +46,12 @@ class Authors extends Component {
               <Card.Img variant="top" alt="Brovka" src={Petr} />
               <Card.Body>
                 <Card.Title>Пётр Бровка</Card.Title>
-                <Button href="/RPP2_react.github.io/authors/brovka" variant="outline-dark">
+                <Link to="/authors/brovka/">
+                <Button variant="outline-dark">
                   Об авторе
+                  
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
 
@@ -49,19 +59,26 @@ class Authors extends Component {
               <Card.Img variant="top" src={egor} alt="Baradulin" />
               <Card.Body>
                 <Card.Title>Рыгор Барадулин</Card.Title>
-                <Button href="/RPP2_react.github.io/authors/borodulin" variant="outline-dark">
+                <Link to="/authors/borodulin/">
+                <Button variant="outline-dark">
+               
                   Об авторе
+                  
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
-
+ 
             <Card border="dark">
               <Card.Img variant="top" src={Globus} alt="Globus" />
               <Card.Body>
                 <Card.Title>Адам Глобус</Card.Title>
-                <Button href="/RPP2_react.github.io/authors/globus" variant="outline-dark">
+                <Link to="/authors/globus/">
+                <Button variant="outline-dark">
                   Об авторе
+                
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>

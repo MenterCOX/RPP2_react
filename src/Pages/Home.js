@@ -6,7 +6,7 @@ import evgexaxzc from "../assets/evgexaxzc.jpg";
 import MenterCOX from "../assets/MenterCOX.jpg";
 import T4WERKA from "../assets/T4WERKA.jpg";
 import Nikolai from "../assets/Nikolaj_Metlitskij.jpg";
-
+import {Link } from "react-router-dom"
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 import useLocalStorage from "../hooks/use-localstorage";
@@ -76,8 +76,9 @@ const Home = () => {
                 <p>
                   <b>Дата смерти</b> 27 ноября 2021
                 </p>
-                <a href="/RPP2_react.github.io/authors/metliskij">
+                <a ><Link to="/authors/metliskij">
                   <b>{t("Read about")}</b>
+                  </Link>
                 </a>
               </Figure.Caption>
             </Figure>

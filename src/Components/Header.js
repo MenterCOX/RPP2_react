@@ -8,7 +8,6 @@ import Hilevich from "../Pages/Auth/Hilevich";
 import Brovka from "../Pages/Auth/Brovka";
 import Borodulin from "../Pages/Auth/Borodulin";
 import Adam from "../Pages/Auth/Adam";
-
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 import useLocalStorage from "../hooks/use-localstorage";
@@ -27,7 +26,7 @@ import {
 
 import logo from "../assets/BookLogo.webp";
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 const Header = () => {
   const { t } = useTranslation();
   const [language, setLanguaege] = useLocalStorage("language", "ru");
@@ -72,9 +71,10 @@ const Header = () => {
 
   return (
     <>
+    <Router>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/RPP2_react.github.io/">
+          <Navbar.Brand><Link to="/">
             <img
               src={logo}
               height="45"
@@ -82,13 +82,14 @@ const Header = () => {
               className="d-inline-block align-top"
               alt="logo"
             />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/RPP2_react.github.io/"> {t("Home")} </Nav.Link>
-              <Nav.Link href="/RPP2_react.github.io/authors"> {t("Authors")} </Nav.Link>
-              <Nav.Link href="/RPP2_react.github.io/#about-us">{t("About us")}</Nav.Link>
+             <a> <Nav.Link><Link to="/"> {t("Home")}</Link> </Nav.Link></a>
+             <a> <Nav.Link><Link to="/authors/"> {t("Authors")} </Link></Nav.Link></a>
+             <a><Nav.Link><Link to="/#about-us"> {t("About us")} </Link></Nav.Link></a>
             </Nav>
             <div class="search">
               <Form inline>
@@ -103,11 +104,11 @@ const Header = () => {
                 />
 
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="/RPP2_react.github.io/authors/hilevich">Нил Гилевич</a>
-                  <a href="/RPP2_react.github.io/authors/metliskij">Николай Метли́цкий</a>
-                  <a href="/RPP2_react.github.io/authors/brovka">Пётр Бровка</a>
-                  <a href="/RPP2_react.github.io/authors/borodulin">Егор Бородулин</a>
-                  <a href="/RPP2_react.github.io/authors/globus">Адам Глобус</a>
+                  <a> <Link to="/authors/hilevich/">Нил Гилевич</Link></a>
+                  <a> <Link to="/authors/metliskij/">Николай Метлицкий</Link></a>
+                  <a> <Link to="/authors/brovka/">Петр Бровка</Link></a>
+                  <a> <Link to="/authors/borodulin/">Егор Бородулин</Link></a>
+                  <a> <Link to="/authors/globus/">Адам Глобуч</Link></a>
                 </div>
               </Form>
               <Button variant="outline-info">{t("Search")}</Button>
@@ -136,16 +137,16 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <Router>
+      
         <Switch>
-          <Route exact path="/RPP2_react.github.io/" component={Home} />
-          <Route exact path="/RPP2_react.github.io/authors" component={Authors} />
-          <Route exact path="/RPP2_react.github.io/about" component={About} />
-          <Route exact path="/RPP2_react.github.io/authors/hilevich" component={Hilevich} />
-          <Route exact path="/RPP2_react.github.io/authors/metliskij" component={Metliskij} />
-          <Route exact path="/RPP2_react.github.io/authors/brovka" component={Brovka} />
-          <Route exact path="/RPP2_react.github.io/authors/borodulin" component={Borodulin} />
-          <Route exact path="/RPP2_react.github.io/authors/globus" component={Adam} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/authors/" component={Authors} />
+          <Route exact path="/#about-us/" component={About} />
+          <Route exact path="/authors/hilevich/" component={Hilevich} />
+          <Route exact path="/authors/metliskij/" component={Metliskij} />
+          <Route exact path="/authors/brovka/" component={Brovka} />
+          <Route exact path="/authors/borodulin/" component={Borodulin} />
+          <Route exact path="/authors/globus/" component={Adam} />
         </Switch>
       </Router>
     </>
