@@ -87,9 +87,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-             <a> <Nav.Link><Link to="/"> {t("Home")}</Link> </Nav.Link></a>
-             <a> <Nav.Link><Link to="/authors/"> {t("Authors")} </Link></Nav.Link></a>
-             <a><Nav.Link><Link to="/#about-us"> {t("About us")} </Link></Nav.Link></a>
+             <a> <Nav.Link><Link to="/"><span id = "ff"> {t("Home")}</span></Link> </Nav.Link></a>
+             <a> <Nav.Link><Link to="/authors/"><span id = "ff" > {t("Authors")} </span></Link></Nav.Link></a>
+             <a><Nav.Link><Link to="/#about-us"> <span id = "ff">{t("About us")} </span></Link></Nav.Link></a>
             </Nav>
             <div class="search">
               <Form inline>
