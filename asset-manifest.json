@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RPP2_react.github.io/static/css/main.7aafcc7a.css",
-    "main.js": "/RPP2_react.github.io/static/js/main.ff67746e.js",
+    "main.css": "/RPP2_react.github.io/static/css/main.77bff43e.css",
+    "main.js": "/RPP2_react.github.io/static/js/main.bac90b3c.js",
     "static/js/787.7ec122fa.chunk.js": "/RPP2_react.github.io/static/js/787.7ec122fa.chunk.js",
     "static/media/Mik_1.jpg": "/RPP2_react.github.io/static/media/Mik_1.5edc3e77e24c89afb35f.jpg",
     "static/media/Mik.jpg": "/RPP2_react.github.io/static/media/Mik.9a051ad36cc89a3ceffc.jpg",
@@ -21,12 +21,12 @@
     "static/media/MenterCOX.jpg": "/RPP2_react.github.io/static/media/MenterCOX.44c4236f210189f35fdb.jpg",
     "static/media/BookLogo.webp": "/RPP2_react.github.io/static/media/BookLogo.dee23c79426317d55c54.webp",
     "index.html": "/RPP2_react.github.io/index.html",
-    "main.7aafcc7a.css.map": "/RPP2_react.github.io/static/css/main.7aafcc7a.css.map",
-    "main.ff67746e.js.map": "/RPP2_react.github.io/static/js/main.ff67746e.js.map",
+    "main.77bff43e.css.map": "/RPP2_react.github.io/static/css/main.77bff43e.css.map",
+    "main.bac90b3c.js.map": "/RPP2_react.github.io/static/js/main.bac90b3c.js.map",
     "787.7ec122fa.chunk.js.map": "/RPP2_react.github.io/static/js/787.7ec122fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aafcc7a.css",
-    "static/js/main.ff67746e.js"
+    "static/css/main.77bff43e.css",
+    "static/js/main.bac90b3c.js"
   ]
 }
